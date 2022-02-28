@@ -1,3 +1,6 @@
 [submodule "helpers"]
 	path = helpers
 	url = https://github.com/johanneskastl/helpers.git
+[submodule "ansible/roles/minimal_bashrc"]
+	path = ansible/roles/minimal_bashrc
+	url = https://github.com/johanneskastl/ansible-role-minimal_bashrc.git
