@@ -11,3 +11,11 @@
     - role: 'create_a_vimrc'
       vars:
         additional_users: "{{ ansible_user }}"
+
+- name: 'Install rke2'
+  hosts: 'all'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'install_rke2'
