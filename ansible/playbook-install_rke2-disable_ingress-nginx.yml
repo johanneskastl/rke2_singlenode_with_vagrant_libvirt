@@ -1,0 +1,10 @@
+---
+- name: 'Install rke2'
+  hosts: 'all'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'install_rke2'
+      vars:
+        disable_something: 'rke2-ingress-nginx'
