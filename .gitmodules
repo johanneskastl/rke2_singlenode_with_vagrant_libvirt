@@ -10,3 +10,6 @@
 [submodule "ansible/roles/create_a_vimrc"]
 	path = ansible/roles/create_a_vimrc
 	url = https://github.com/johanneskastl/ansible-role-create_a_vimrc.git
+[submodule "ansible/roles/zypper_ref_accept_keys"]
+	path = ansible/roles/zypper_ref_accept_keys
+	url = https://github.com/johanneskastl/ansible-role-zypper_ref_accept_keys.git
