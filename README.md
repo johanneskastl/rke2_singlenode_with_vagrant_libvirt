@@ -1,10 +1,10 @@
 # rke2_singlenode_with_vagrant_libvirt
 
-Vagrant setup for building a RKE2 singlenode cluster using the vagrant libvirt provider 
+Vagrant setup for building a RKE2 singlenode cluster using the vagrant-libvirt provider.
 
 This setup creates a singlenode RKE2 "cluster".
 
-Default OS is openSUSE Leap 15.3, but that can be changed in the Vagrantfile. Same holds true for the sizing of the machines.
+Default OS is openSUSE Leap 15.5, but that can be changed in the Vagrantfile. Same holds true for the sizing of the machines.
 
 ## Vagrant
 
