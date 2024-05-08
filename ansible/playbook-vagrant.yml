@@ -1,8 +1,8 @@
 ---
 - name: 'Configure the node'
   hosts: 'all'
-  gather_facts: 'yes'
-  become: 'true'
+  gather_facts: true
+  become: true
 
   roles:
     - role: 'minimal_bashrc'
@@ -14,8 +14,8 @@
 
 - name: 'Install rke2'
   hosts: 'all'
-  gather_facts: 'yes'
-  become: 'true'
+  gather_facts: true
+  become: true
 
   roles:
     - role: 'install_rke2'
