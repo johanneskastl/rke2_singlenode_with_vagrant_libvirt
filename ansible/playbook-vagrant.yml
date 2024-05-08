@@ -15,5 +15,11 @@
   gather_facts: true
   become: true
 
+  pre_tasks:
+
+    - name: 'Install iptables'
+      community.general.zypper:
+        name: 'iptables'
+
   roles:
     - role: 'johanneskastl.install_rke2'
