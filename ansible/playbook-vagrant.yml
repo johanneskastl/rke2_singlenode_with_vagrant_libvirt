@@ -5,12 +5,10 @@
   become: true
 
   roles:
-    - role: 'minimal_bashrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
-    - role: 'create_a_vimrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
+    - role: 'johanneskastl.minimal_bashrc'
+      additional_users: "{{ ansible_user }}"
+    - role: 'johanneskastl.create_a_vimrc'
+      additional_users: "{{ ansible_user }}"
 
 - name: 'Install rke2'
   hosts: 'all'
@@ -18,4 +16,4 @@
   become: true
 
   roles:
-    - role: 'install_rke2'
+    - role: 'johanneskastl.install_rke2'
